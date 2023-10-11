@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+
+        .history {
+            margin-top: 20px;
+        }
+
+        .history ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .history li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .history .product-name {
+            flex: 1;
+        }
+
+        .history .action-button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">商品管理</div>
+    </header>
+
+    <main>
+        <div class="center-container">
+            <form>
+             
+                <input type="text" placeholder="商品名称">
+                <button class="button">下架商品</button>
+            </form>
+
+           
+            <div class="history">
+                <h2>历史记录</h2>
+                <ul>
+                    <li>
+                        <span class="product-name">商品1</span>
+                        <button class="action-button">重新上架</button>
+                    </li>
+                    <li>
+                        <span class="product-name">商品2</span>
+                        <button class="action-button">重新上架</button>
+                    </li>
+                    <!-- 在这里添加更多历史记录项 -->
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

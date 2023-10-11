@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("../img/水果.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(248, 248, 248,0.9);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .form {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form h2 {
+            text-align: center;
+        }
+
+        .form label,
+        .form input[type="text"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .form input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form input[type="submit"] {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">用户信息填写</div>
+    </header>
+
+    <main>
+        <div class="center-container">
+            <form class="form" action="">
+                <h2>用户信息填写</h2>
+                <label for="username">姓名:</label>
+                <input type="text" id="username" name="username">
+                <label for="telephone">电话:</label>
+                <input type="text" id="telephone" name="telephone">
+                <input type="submit" value="提交">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

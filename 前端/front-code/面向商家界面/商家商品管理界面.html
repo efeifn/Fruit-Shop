@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        #container {
+            display: flex;
+            min-height: 100vh;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #left-sidebar {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            width: 180px;
+            border-radius: 10px 0 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 5px;
+            margin: 3px;
+            text-align: left;
+            border-left: 1px solid black;
+            border-right:1px solid black;
+            border-bottom:1px solid black;
+
+        }
+        tr{
+            border-bottom: 1px solid black;
+        }
+
+        .menu h2 {
+            color: #fff;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 10px 0;
+            border-bottom: 1px solid #007bff; 
+            
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="left-sidebar">
+            <div id="logo">商家商品管理</div>
+            <div class="menu">
+
+                <ul>
+                    <a href="../面向商家界面/商品上线界面.html"><li>商品上线</li></a>
+                    <a href="../面向商家界面/商品下线界面.html"><li>商品下线</li></a>
+                    <a href="../面向商家界面/查看历史商品界面.html"><li>查看历史商品</li></a>
+                    <a href="../面向商家界面/冻结商品界面.html"><li>冻结商品</li></a>
+                    <a href="../面向商家界面/查看上架商品界面.html"><li>查看上架商品</li></a>
+                    <a href="../面向商家界面/查看意向购买人界面.html"><li>查看意向购买人</li></a>
+                </ul>
+            </div>
+
+          
+            </div>
+        </div>
+
+ 
+    </div>
+</body>
+
+</html>

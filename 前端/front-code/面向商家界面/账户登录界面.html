@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 80vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            display: none; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">账户登录界面</div>
+    </header>
+
+    <main>
+        <div class="center-container">
+            <form>
+                <input type="text" id="account" placeholder="账户">
+                <div class="error" id="account-error">账号格式不合法</div> 
+                <input type="password" id="password" placeholder="密码">
+                <div class="error" id="password-error">密码格式不合法</div> 
+                <button class="button" onclick="validateLogin()">登录</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        function validateLogin() {
+            const account = document.getElementById("account").value;
+            const password = document.getElementById("password").value;
+
+           
+            const accountPattern = /^[a-zA-Z0-9]{6,10}$/;
+            const isAccountValid = accountPattern.test(account);
+
+           
+            const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}$/;
+            const isPasswordValid = passwordPattern.test(password);
+
+            const accountErrorElement = document.getElementById("account-error");
+            const passwordErrorElement = document.getElementById("password-error");
+
+            
+            accountErrorElement.style.display = isAccountValid ? "none" : "block";
+            passwordErrorElement.style.display = isPasswordValid ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

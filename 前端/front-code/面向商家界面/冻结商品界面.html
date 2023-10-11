@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        .inventory {
+            margin-top: 20px;
+        }
+
+        .inventory ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .inventory li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .inventory .product-name {
+            flex: 1;
+        }
+
+        .inventory .action-button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">商品管理</div>
+    </header>
+
+    <main>
+        <div class="center-container">
+
+            <div class="inventory">
+                <h2>商品库存</h2>
+                <ul>
+                    <li>
+                        <span class="product-name">商品1</span>
+                        <button class="action-button">冻结商品</button>
+                    </li>
+                    <li>
+                        <span class="product-name">商品2</span>
+                        <button class="action-button">冻结商品</button>
+                    </li>
+                    <!-- 在这里添加更多库存商品项 -->
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

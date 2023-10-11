@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #categories {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        #categories li {
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #categories a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            
+        }
+
+        #categories li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .dropdown li {
+            text-align: left;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #ad {
+            background-color: #fff;
+            padding: 20px;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-overlay p,
+        span {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdown ul li {
+            white-space: nowrap;
+        }
+
+        #order-button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        li {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">商城首页</div>
+        <ul id="categories">
+            <li>
+                <a href="#">核果类</a>
+                <div class="dropdown">
+                    <ul id="fruits">
+                        <li><a href="../面向买家界面/商品信息界面模板.html" style="color: black;">橄榄</a></li>
+                        <li>桃子</li>
+                        <li>杨梅</li>
+                        <li>樱桃</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+            <a href="#">仁果类</a>
+            <div class="dropdown">
+                <ul id="fruits">
+                    <li>榴莲</li>
+                    <li>柿子</li>
+                </ul>
+            </div>
+            </li>
+            </li>
+            <li>
+                <a href="#">浆果类</a>
+                <div class="dropdown">
+                    <ul>
+                        <li>草莓</li>
+                        <li>黑莓</li>
+                        <li>蓝莓</li>
+                        <li>葡萄</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">柑橘类</a>
+                <div class="dropdown">
+                    <ul>
+                        <li>耙耙柑</li>
+                        <li>丑橘</li>
+                        <li>皇帝柑</li>
+                        <li>金桔</li>
+                        <li>芦柑</li>
+                        <li>砂糖橘</li>
+                        <li>血橙</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">瓜类</a>
+                <div class="dropdown">
+                    <ul>
+                        <li>白兰瓜</li>
+                        <li>哈密瓜</li>
+                        <li>黄金瓜</li>
+                        <li>木瓜</li>
+                        <li>甜瓜</li>
+                        <li>西瓜</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">热带水果类</a>
+                <div class="dropdown">
+                    <ul>
+                        <li>菠萝</li>
+                        <li>荔枝</li>
+                        <li>龙眼</li>
+                        <li>香蕉</li>
+                        <li>杨桃</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="ad" class="image-container">
+            <img src="..\..\img\水果.jpg" alt="新鲜水果广告">
+            <div class="text-overlay">
+                <span>好吃</span><br>
+                <p>&nbsp;&nbsp;&nbsp;是一种愉悦的享受</p>
+                <p>我们相信，好吃的水果是上苍对人类遵循天地万物自然规律的奖赏</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="../面向买家界面/获得查询码界面.html"><button id="order-button">订单编号查询</button></a>
+        
+        
+    </footer>
+</body>
+
+</html>

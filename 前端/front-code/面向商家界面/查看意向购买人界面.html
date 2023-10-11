@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    
+
+        .inventory {
+            margin-top: 20px;
+        }
+
+        .inventory ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .inventory li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .inventory .product-name {
+            flex: 1;
+        }
+
+        .inventory .action-button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">商品管理</div>
+    </header>
+
+    <main>
+        <div class="center-container">
+            <div class="inventory">
+                <h2>已上架商品</h2>
+                <ul>
+                    <li>
+                        <span class="product-name">商品1</span>
+                        <button class="action-button" onclick="showIntentions(1)">查看购买人</button>
+                    </li>
+                    <li>
+                        <span class="product-name">商品2</span>
+                        <button class="action-button" onclick="showIntentions(2)">查看购买人</button>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        function showIntentions(productID) {
+            
+            alert('展示商品 ' + productID + ' 的购买人信息');
+        }
+    </script>
+</body>
+
+</html>

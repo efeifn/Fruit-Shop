@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+
+        .inventory {
+            margin-top: 20px;
+        }
+
+        .inventory ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .inventory li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .inventory .product-name {
+            flex: 1;
+        }
+
+        .inventory .action-button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">商品管理</div>
+    </header>
+
+    <main>
+        <div class="center-container">
+            <!-- 上架商品列表 -->
+            <div class="inventory">
+                <h2>上架商品</h2>
+                <ul>
+                    <li>
+                        <span class="product-name">商品1</span>
+                      
+                    </li>
+                    <li>
+                        <span class="product-name">商品2</span>
+                    
+                    </li>
+                    <!-- 在这里添加更多上架商品项 -->
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
